@@ -1,0 +1,62 @@
+In VS code:
+    python -m venv venv
+
+    venv\Scripts\activate
+
+    pip install -r requirements.txt
+
+    python run.py
+
+--------------------------------------------------------------------------
+
+In cmd:
+    C:\Users\JAGANNATH\db> sqlite3 mydb.db
+
+    sqlite> .tables
+    STUDENT      TEACHER      UserDetails  category     product      user
+
+    sqlite> Select * from user;
+    2|ram|ram.1@gmail.com|ram|123456
+    3|jagan|jagan@gmail.com|jagan|123456
+    4|james doll|james@gmail.com|james|123456
+
+    sqlite> .schema user
+    CREATE TABLE user (
+            id INTEGER NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            email VARCHAR(100) NOT NULL,
+            username VARCHAR(100) NOT NULL,
+            password VARCHAR(100) NOT NULL,
+            PRIMARY KEY (id)
+    );
+
+---------------------------------------------------------------------------
+
+git commands:
+    PS C:\Nexturn\CapStoneProject> echo "# Capstone_Project_API" >> README.md
+
+    PS C:\Nexturn\capstone_project> git init
+
+    PS C:\Nexturn\CapStoneProject> git add README.md
+
+    PS C:\Nexturn\CapStoneProject> git commit -m "first commit"
+
+    git branch -M main
+
+    PS C:\Nexturn\CapStoneProject> git remote add origin https://github.com/CHINNAKOTLAJAGANNATH/Capstone_Project_API.git
+
+    PS C:\Nexturn\capstone_project> git add .
+
+    PS C:\Nexturn\capstone_project> git commit -m "Pushing all files from File Manager"
+
+    PS C:\Nexturn\capstone_project> git push -u origin main
+
+    PS C:\Nexturn\capstone_project> New-Item -ItemType File -Path Jenkinsfile
+
+    PS C:\Nexturn\capstone_project> git add Jenkinsfile
+
+    PS C:\Nexturn\capstone_project> git commit -m "Added Jenkins Pipeline for CI/CD"
+
+    PS C:\Nexturn\CapStoneProject> git push -u origin main
+
+    
